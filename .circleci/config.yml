@@ -1,4 +1,8 @@
 version: 2
+
+orbs:
+    hello: circleci/hello-build@0.0.7
+
 jobs:
   build:
     working_directory: ~/circleci-demo-python-django
