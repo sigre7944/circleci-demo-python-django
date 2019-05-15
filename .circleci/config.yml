@@ -17,6 +17,7 @@ jobs:
           POSTGRES_DB: circle_test
     steps:
       - checkout
+      - run: echo "Hello World"
       - run: sudo chown -R circleci:circleci /usr/local/bin
       - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
       - restore_cache:
